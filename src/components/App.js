@@ -4,12 +4,12 @@ class App extends Component {
   currentTime() {
     return new Date().toLocaleTimeString();
   }
-  interval = null;
   constructor(props) {
     super(props);
     this.state = {
       time: this.currentTime()
     };
+    this.interval = null;
   }
   render() {
     return (
