@@ -1,7 +1,6 @@
 import React, { Component, useState } from "react";
 import "./../styles/App.css";
 class App extends Component {
-  interval = null;
   currentTime() {
     return new Date().toLocaleTimeString();
   }
@@ -10,11 +9,12 @@ class App extends Component {
     this.state = {
       time: this.currentTime()
     };
+    this.interval = null;
   }
   render() {
     return (
       <div className="Clock">
-        <h3>{this.state.time}</h3>
+        <h3 id="time">{this.state.time}</h3>
       </div>
     );
   }
