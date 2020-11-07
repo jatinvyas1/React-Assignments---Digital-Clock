@@ -9,7 +9,6 @@ class App extends Component {
     this.state = {
       time: this.currentTime()
     };
-    this.interval = null;
   }
   render() {
     return (
